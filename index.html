@@ -17,44 +17,46 @@
     <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4">
         <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center gap-2">
-               <img src="assets/logo sin fondo.png"
-     alt="Global Connections HN"
-     class="h-16 md:h-14 lg:h-20 w-auto object-contain" />
-
-<span class="text-xl font-bold tracking-tight text-[#fff] hidden">
-    Global Connections <span class="text-[#FF6B2B]">HN</span>
-</span>
+                <img src="assets/logo sin fondo.png" alt="Global Connections HN" class="h-16 md:h-14 lg:h-20 w-auto object-contain" />
+                <span class="text-xl font-bold tracking-tight text-[#fff] hidden">
+                    Global Connections <span class="text-[#FF6B2B]">HN</span>
+                </span>
             </div>
+
+            <!-- Botón de idioma para móvil -->
+            <button type="button" class="lang-switch md:hidden flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10 transition-all text-white text-sm" aria-label="Change language / Cambiar idioma">
+                <span class="lang-flag">🇺🇸</span>
+                <span class="lang-text">EN</span>
+            </button>
+
             <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
-    <button id="lang-switch" class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10 transition-all text-white mr-4">
-        <span id="lang-flag" data-i18n="lang_flag">🇺🇸</span>
-        <span id="lang-text" data-i18n="lang_name">EN</span>
-    </button>
-    
-    <a style="color: #fff;" href="#about" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_about">About</a>
-    <a style="color: #fff;" href="#services" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_services">Services</a>
-    <a style="color: #fff;" href="#why-us" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_why_hn">Why Honduras</a>
-    <a style="color: #fff;" href="#ceo" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_leadership">Leadership</a>
-    <a style="color: #fff;" href="#contact" class="bg-[#003366] text-white px-5 py-2.5 rounded-full hover:bg-slate-800 transition-all" data-i18n="nav_quote">Get a Quote</a>
-</div>
+                <!-- Botón de idioma para escritorio -->
+                <button type="button" class="lang-switch flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/20 hover:bg-white/10 transition-all text-white mr-4" aria-label="Change language / Cambiar idioma">
+                    <span class="lang-flag">🇺🇸</span>
+                    <span class="lang-text">EN</span>
+                </button>
+
+                <a style="color: #fff;" href="#about" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_about">About</a>
+                <a style="color: #fff;" href="#services" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_services">Services</a>
+                <a style="color: #fff;" href="#why-us" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_why_hn">Why Honduras</a>
+                <a style="color: #fff;" href="#testimonials" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_testimonials">Testimonials</a>
+                <a style="color: #fff;" href="#ceo" class="hover:text-[#FF6B2B] transition-colors" data-i18n="nav_leadership">Leadership</a>
+                <a style="color: #fff;" href="#contact" class="bg-[#003366] text-white px-5 py-2.5 rounded-full hover:bg-slate-800 transition-all" data-i18n="nav_quote">Get a Quote</a>
+            </div>
         </nav>
     </header>
 
-    <section class="relative h-screen flex items-center overflow-hidden">
+    <section id="hero" class="relative h-screen flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="assets/44f8dd3f04a78701_modern_contact_center_photography_index_0.PNG" alt="Modern Call Center" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-l from-slate-900/90 via-slate-900/60 to-transparent"></div>
         </div>
-        
+
         <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20">
             <div class="max-w-2xl">
                 <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-[#FF6B2B] uppercase bg-orange-500/10 rounded-full border border-orange-500/20" data-i18n="hero_badge">Premier Nearshore Partner</span>
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight" data-i18n="hero_title">
-                    Connecting Your Business to the <span class="text-[#FF6B2B]">World</span>
-                </h1>
-                <p class="text-xl text-slate-300 mb-10 leading-relaxed" data-i18n="hero_desc">
-                    Professional Contact Center Solutions from Honduras. Empowering global brands with high-performance BPO solutions since 2014.
-                </p>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight" data-i18n="hero_title">Connecting Your Business to the <span class="text-[#FF6B2B]">World</span></h1>
+                <p class="text-xl text-slate-300 mb-10 leading-relaxed" data-i18n="hero_desc">Professional Contact Center Solutions from Honduras. Empowering global brands with high-performance BPO solutions since 2014.</p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#contact" class="px-8 py-4 bg-[#FF6B2B] text-white rounded-xl font-semibold hover:bg-orange-600 transition-all transform hover:-translate-y-1 shadow-xl shadow-orange-500/20" data-i18n="hero_cta_quote">Get a Quote</a>
                     <a href="#services" class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-semibold hover:bg-white/20 transition-all transform hover:-translate-y-1" data-i18n="hero_cta_services">Our Services</a>
@@ -68,25 +70,25 @@
     </section>
 
     <div class="py-12 bg-slate-50 border-y border-slate-100 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
-        <h2 class="text-sm font-semibold text-slate-400 uppercase tracking-[0.2em]" data-i18n="trusted_by">Some of Our Clients</h2>
-    </div>
-    <div class="flex whitespace-nowrap overflow-hidden group">
-        <div class="flex space-x-16 items-center animate-infinite-scroll">
-            <img src="assets/Torrez.png" alt="Torrez" class="h-9 hover:opacity-100 transition-all" />
-            <img src="assets/LOGO MD PM.png" alt="PM" class="h-9 hover:opacity-100 transition-all" />
-            <img src="assets/PCG WHITE.png" alt="PCG" class="h-9 hover:opacity-100 transition-all" />
-            <img src="assets/mnl.jpg" alt="MNL" class="h-9 hover:opacity-100 transition-all" />
+        <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+            <h2 class="text-sm font-semibold text-slate-400 uppercase tracking-[0.2em]" data-i18n="trusted_by">Some of Our Clients</h2>
         </div>
+        <div class="flex whitespace-nowrap overflow-hidden group">
+            <div class="flex space-x-16 items-center animate-infinite-scroll">
+                <img src="assets/Torrez.png" alt="Torrez" class="h-9 hover:opacity-100 transition-all" />
+                <img src="assets/LOGO MD PM.png" alt="PM" class="h-9 hover:opacity-100 transition-all" />
+                <img src="assets/PCG WHITE.png" alt="PCG" class="h-9 hover:opacity-100 transition-all" />
+                <img src="assets/mnl.jpg" alt="MNL" class="h-9 hover:opacity-100 transition-all" />
+            </div>
+            <div class="hidden md:flex space-x-16 items-center animate-infinite-scroll ml-16" aria-hidden="true">
+                <img src="assets/Torrez.png" alt="Torrez" class="h-9 hover:opacity-100 transition-all" />
+                <img src="assets/LOGO MD PM.png" alt="PM" class="h-9 hover:opacity-100 transition-all" />
+                <img src="assets/PCG WHITE.png" alt="PCG" class="h-9 hover:opacity-100 transition-all" />
+                <img src="assets/mnl.jpg" alt="MNL" class="h-9 hover:opacity-100 transition-all" />
+            </div>
+        </div>
+    </div>
 
-        <div class="hidden md:flex space-x-16 items-center animate-infinite-scroll ml-16" aria-hidden="true">
-            <img src="assets/Torrez.png" alt="Torrez" class="h-9 hover:opacity-100 transition-all" />
-            <img src="assets/LOGO MD PM.png" alt="PM" class="h-9 hover:opacity-100 transition-all" />
-            <img src="assets/PCG WHITE.png" alt="PCG" class="h-9 hover:opacity-100 transition-all" />
-            <img src="assets/mnl.jpg" alt="MNL" class="h-9 hover:opacity-100 transition-all" />
-        </div>
-    </div>
-</div>
     <section id="about" class="py-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -100,10 +102,7 @@
                 </div>
                 <div>
                     <h2 class="text-4xl font-bold text-[#003366] mb-6" data-i18n="about_title">About Global Connections <span class="text-[#FF6B2B]">HN</span></h2>
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed" data-i18n="about_desc">
-                        Founded in 2014 in Choluteca, Honduras, Global Connections provides professional nearshore outsourcing solutions to businesses across the United States. Our experience spans multiple industries, including legal services, immigration law firms, sales, customer service, debt collections, and technical support.
-We focus on building dedicated teams, delivering reliable service, and establishing long-term business partnerships.
-                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed" data-i18n="about_desc">Founded in 2014 in Choluteca, Honduras, Global Connections provides professional nearshore outsourcing solutions to businesses across the United States. Our experience spans multiple industries, including legal services, immigration law firms, sales, customer service, debt collections, and technical support. We focus on building dedicated teams, delivering reliable service, and establishing long-term business partnerships.</p>
                     <div class="grid grid-cols-2 gap-6">
                         <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
                             <i data-lucide="shield-check" class="text-[#FF6B2B] mb-3"></i>
@@ -138,19 +137,14 @@ We focus on building dedicated teams, delivering reliable service, and establish
                 <h2 class="text-4xl font-bold mb-4" data-i18n="services_main_title">Core BPO Solutions</h2>
                 <p class="text-slate-400" data-i18n="services_main_desc">Specialized business solutions designed to optimize your operations and maximize ROI.</p>
             </div>
-            
+
             <div class="grid md:grid-cols-4 gap-6">
                 <div class="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
                     <div class="w-14 h-14 bg-orange-500/20 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110">
                         <i data-lucide="hand-coins" class="text-orange-400 w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" data-i18n="service_coll">Debt Collections & Recovery</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_coll_desc">Our Specialty — Millions Recovered Annually
-
-We specialize in professional debt collection services, helping our clients recover millions of dollars annually. Our experienced team handles account recovery, payment negotiations, and follow-ups with a results-driven approach.
-
-No Collection, No Fee. We only get paid when you do.
-</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service_coll">Debt Collections &amp; Recovery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_coll_desc"><span class="text-orange-400 font-semibold">Our Specialty — Millions Recovered Annually</span><br><br>We specialize in professional debt collection services, helping our clients recover millions of dollars annually. Our experienced team handles account recovery, payment negotiations, and follow-ups with a results-driven approach.<br><br><strong class="text-white">No Collection, No Fee.</strong> We only get paid when you do.</p>
                 </div>
                 <div class="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
                     <div class="w-14 h-14 bg-[#FF6B2B]/20 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110">
@@ -159,33 +153,33 @@ No Collection, No Fee. We only get paid when you do.
                     <h3 class="text-xl font-bold mb-3" data-i18n="service_cs">Customer Service</h3>
                     <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_cs_desc">Deliver exceptional customer experiences with our professional bilingual support teams. We handle inbound and outbound calls, customer inquiries, issue resolution, and ongoing assistance, helping businesses improve customer satisfaction, build loyalty, and strengthen long-term relationships.</p>
                 </div>
-                
                 <div class="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
                     <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110">
                         <i data-lucide="trending-up" class="text-blue-400 w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" data-i18n="service_sales">Sales & Telemarketing</h3>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service_sales">Sales &amp; Telemarketing</h3>
                     <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_sales_desc">Drive business growth with our results-oriented sales teams. We specialize in inbound and outbound sales, lead generation, appointment setting, and customer acquisition, helping businesses increase conversions, expand their customer base, and maximize revenue opportunities.</p>
                 </div>
-
                 <div class="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
                     <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110">
                         <i data-lucide="wrench" class="text-purple-400 w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" data-i18n="service_tech">Technical Support - Tier 1 & Tier 2</h3>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service_tech">Technical Support - Tier 1 &amp; Tier 2</h3>
                     <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_tech_desc">Provide reliable technical assistance through our bilingual support teams. From troubleshooting and ticket management to issue resolution and escalations, we help businesses resolve technical challenges efficiently and deliver a seamless customer experience.</p>
-                </div>
- <div class="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
-                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110">
-<i data-lucide="scale" class="text-purple-400 w-8 h-8"></i>                    </div>
-                    <h3 class="text-xl font-bold mb-3" data-i18n="service_tech">Legal & Immigration Support</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_tech_desc">We provide specialized administrative and client communication support for law firms, including immigration practices. Our bilingual teams assist with client inquiries, appointment scheduling, case follow-ups, and communication coordination, helping legal professionals stay organized and deliver attentive, reliable service.</p>
                 </div>
                 <div class="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
                     <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110">
-<i data-lucide="clipboard-list" class="text-purple-400 w-8 h-8"></i>                    </div>
-                    <h3 class="text-xl font-bold mb-3" data-i18n="service_tech">Back-Office & Administrative Support</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_tech_desc">Streamline your daily operations with dependable administrative support. From data entry and document management to scheduling, reporting, and workflow coordination, our dedicated teams help reduce operational costs, improve efficiency, and allow your business to focus on growth.</p>
+                        <i data-lucide="scale" class="text-purple-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service_legal">Legal &amp; Immigration Support</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_legal_desc">We provide specialized administrative and client communication support for law firms, including immigration practices. Our bilingual teams assist with client inquiries, appointment scheduling, case follow-ups, and communication coordination, helping legal professionals stay organized and deliver attentive, reliable service.</p>
+                </div>
+                <div class="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110">
+                        <i data-lucide="clipboard-list" class="text-purple-400 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="service_back">Back-Office &amp; Administrative Support</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="service_back_desc">Streamline your daily operations with dependable administrative support. From data entry and document management to scheduling, reporting, and workflow coordination, our dedicated teams help reduce operational costs, improve efficiency, and allow your business to focus on growth.</p>
                 </div>
             </div>
         </div>
@@ -198,36 +192,28 @@ No Collection, No Fee. We only get paid when you do.
                     <h2 class="text-4xl font-bold text-[#003366] mb-8" data-i18n="advantage_title">The Nearshore Advantage</h2>
                     <div class="space-y-8">
                         <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]">
-                                <i data-lucide="languages"></i>
-                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]"><i data-lucide="languages"></i></div>
                             <div>
                                 <h4 class="text-lg font-bold text-[#003366]" data-i18n="adv_bilingual">Bilingual Excellence</h4>
                                 <p class="text-slate-500" data-i18n="adv_bilingual_desc">English-Spanish fluency with neutral accents and deep North American cultural affinity.</p>
                             </div>
                         </div>
                         <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]">
-                                <i data-lucide="clock-4"></i>
-                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]"><i data-lucide="clock-4"></i></div>
                             <div>
                                 <h4 class="text-lg font-bold text-[#003366]" data-i18n="adv_coverage">24/7 Global Coverage</h4>
                                 <p class="text-slate-500" data-i18n="adv_coverage_desc">Operating in Central Time (CST), we align perfectly with US hours to ensure real-time collaboration.</p>
                             </div>
                         </div>
                         <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]">
-                                <i data-lucide="cpu"></i>
-                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]"><i data-lucide="cpu"></i></div>
                             <div>
                                 <h4 class="text-lg font-bold text-[#003366]" data-i18n="adv_tech">State-of-the-art Technology</h4>
                                 <p class="text-slate-500" data-i18n="adv_tech_desc">Redundant fiber optic connectivity and modern CRM integration for seamless performance.</p>
                             </div>
                         </div>
                         <div class="flex gap-6">
-                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]">
-                                <i data-lucide="expand"></i>
-                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#FF6B2B]"><i data-lucide="expand"></i></div>
                             <div>
                                 <h4 class="text-lg font-bold text-[#003366]" data-i18n="adv_scale">Scalable Infrastructure</h4>
                                 <p class="text-slate-500" data-i18n="adv_scale_desc">Rapidly adapt to seasonal peaks or market shifts with our flexible talent pool in Choluteca.</p>
@@ -240,47 +226,41 @@ No Collection, No Fee. We only get paid when you do.
                         <div class="bg-white rounded-[2.3rem] p-10 transform -rotate-3 border border-slate-100 shadow-2xl">
                             <h3 class="text-2xl font-bold text-[#003366] mb-4 text-center" data-i18n="cost_eff_title">Cost-Efficiency</h3>
                             <div class="space-y-4 mb-8">
-                                <div class="h-3 w-full bg-slate-100 rounded-full overflow-hidden">
-                                    <div class="h-full bg-[#003366] w-[100%]"></div>
-                                </div>
+                                <div class="h-3 w-full bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-[#003366] w-[100%]"></div></div>
                                 <p class="text-xs text-slate-400 flex justify-between uppercase">
                                     <span data-i18n="cost_us">US Operations</span> <span data-i18n="cost_us_val">100% Cost</span>
                                 </p>
-                                <div class="h-3 w-full bg-slate-100 rounded-full overflow-hidden">
-                                    <div class="h-full bg-[#FF6B2B] w-[45%]"></div>
-                                </div>
+                                <div class="h-3 w-full bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-[#FF6B2B] w-[45%]"></div></div>
                                 <p class="text-xs text-slate-400 flex justify-between uppercase">
                                     <span data-i18n="cost_hn">Honduras (Global Connections)</span> <span data-i18n="cost_hn_val">45% Cost</span>
                                 </p>
                             </div>
-                            <p class="text-slate-600 text-sm leading-relaxed text-center italic" data-i18n="cost_eff_quote">
-                                "Achieve up to 55% operational savings without compromising on quality or cultural alignment."
-                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed text-center italic" data-i18n="cost_eff_quote">"Achieve up to 55% operational savings without compromising on quality or cultural alignment."</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- ================= TESTIMONIALS ================= -->
-<section id="testimonials" class="py-24 bg-slate-900 text-white relative overflow-hidden">
-    <div class="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-orange-500/5 to-transparent"></div>
 
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-[#FF6B2B] uppercase bg-orange-500/10 rounded-full border border-orange-500/20" data-i18n="testi_badge">Testimonials</span>
-            <h2 class="text-4xl font-bold mb-4" data-i18n="testi_title">What Our Clients Say</h2>
-            <p class="text-slate-400" data-i18n="testi_desc">Long-term partnerships built on trust, performance, and results.</p>
-        </div>
+    <!-- ================= TESTIMONIALS ================= -->
+    <section id="testimonials" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-orange-500/5 to-transparent"></div>
 
-        <div class="grid lg:grid-cols-3 gap-6">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-[#FF6B2B] uppercase bg-orange-500/10 rounded-full border border-orange-500/20" data-i18n="testi_badge">Testimonials</span>
+                <h2 class="text-4xl font-bold mb-4" data-i18n="testi_title">What Our Clients Say</h2>
+                <p class="text-slate-400" data-i18n="testi_desc">Long-term partnerships built on trust, performance, and results.</p>
+            </div>
 
-            <!-- Testimonial 1: David Cooper -->
-            <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
-                <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+            <div class="grid lg:grid-cols-3 gap-6">
 
-                <div class="testi-text relative flex-1">
-                    <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi1_text">Before partnering with Global Connections, I had worked with several call centers and consistently struggled to find a team that could deliver the level of performance, reliability, and commitment our business needed.
+                <!-- 1: David Cooper -->
+                <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
+                    <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+                    <div class="testi-text relative flex-1">
+                        <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi1_text">Before partnering with Global Connections, I had worked with several call centers and consistently struggled to find a team that could deliver the level of performance, reliability, and commitment our business needed.
 
 We’ve been working with Global Connections since they first started in 2014, and the difference has been remarkable.
 
@@ -291,29 +271,26 @@ What truly sets Global Connections apart is their dedication to our success. The
 Finding a reliable outsourcing partner isn’t easy, but with Global Connections, we found a team we could trust and grow with.
 
 After more than a decade of working together, I can confidently say that Global Connections has been a valuable part of our company’s success. I highly recommend them to any business looking for a dependable, results-driven partner.</p>
-                </div>
-                <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors" data-more="Read more" data-less="Read less">Read more</button>
+                    </div>
+                    <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors">Read more</button>
 
-                <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
-                    <!-- 📷 FOTO: reemplaza este div por <img src="assets/david-cooper.jpg" alt="David Cooper" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
-                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
-                        <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                            <i data-lucide="user" class="w-7 h-7 text-white/40"></i>
+                    <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+                        <!-- 📷 FOTO: reemplaza este div por <img src="assets/david-cooper.jpg" alt="David Cooper" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
+                            <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center"><i data-lucide="user" class="w-7 h-7 text-white/40"></i></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">David Cooper</h4>
+                            <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi1_role">Long-Term Client | Partner Since 2014</p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold">David Cooper</h4>
-                        <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi1_role">Long-Term Client | Partner Since 2014</p>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- Testimonial 2: Pure Capital Group -->
-            <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
-                <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
-
-                <div class="testi-text relative flex-1">
-                    <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi2_text">Our partnership with Global Connections began in 2018, when we launched our debt collection operations with their team. What started as a new business venture has grown into a successful collections company that now recovers millions of dollars in outstanding debt annually.
+                <!-- 2: Pure Capital Group -->
+                <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
+                    <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+                    <div class="testi-text relative flex-1">
+                        <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi2_text">Our partnership with Global Connections began in 2018, when we launched our debt collection operations with their team. What started as a new business venture has grown into a successful collections company that now recovers millions of dollars in outstanding debt annually.
 
 Global Connections has been an integral part of that journey. From day one, they provided the infrastructure, operational support, and dedicated professionals we needed to build and scale our business.
 
@@ -324,29 +301,26 @@ What makes Global Connections different is their commitment to building long-ter
 Looking back at where we started in 2018 and seeing what we’ve accomplished today is a testament to the strength of this partnership. Global Connections hasn’t just supported our operations; they’ve been part of building the foundation of our success.
 
 We are proud of what we’ve achieved together and look forward to continuing this partnership for many years to come.</p>
-                </div>
-                <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors" data-more="Read more" data-less="Read less">Read more</button>
+                    </div>
+                    <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors">Read more</button>
 
-                <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
-                    <!-- 📷 FOTO: reemplaza este div por <img src="assets/pure-capital.jpg" alt="David Cooper & Jack" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
-                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
-                        <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                            <i data-lucide="users" class="w-7 h-7 text-white/40"></i>
+                    <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+                        <!-- 📷 FOTO: reemplaza este div por <img src="assets/pure-capital.jpg" alt="David Cooper & Jack" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
+                            <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center"><i data-lucide="users" class="w-7 h-7 text-white/40"></i></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">David Cooper &amp; Jack</h4>
+                            <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi2_role">Pure Capital Group | Partners Since 2018</p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold">David Cooper &amp; Jack</h4>
-                        <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi2_role">Pure Capital Group | Partners Since 2018</p>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- Testimonial 3: Torres & Sánchez -->
-            <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
-                <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
-
-                <div class="testi-text relative flex-1">
-                    <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi3_text">At Torres & Sánchez, we are dedicated to serving the Latino community across the United States, helping individuals and families navigate the complexities of immigration law.
+                <!-- 3: Torres & Sánchez -->
+                <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
+                    <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+                    <div class="testi-text relative flex-1">
+                        <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi3_text">At Torres &amp; Sánchez, we are dedicated to serving the Latino community across the United States, helping individuals and families navigate the complexities of immigration law.
 
 Since partnering with Global Connections in 2021, their team has played a vital role in our firm’s growth and success.
 
@@ -357,92 +331,74 @@ What truly sets Global Connections apart is their ability to combine professiona
 Global Connections has become a trusted extension of our firm, allowing us to focus on providing quality legal representation while knowing our clients are in excellent hands.
 
 We couldn’t be happier with this partnership and highly recommend their services.</p>
-                </div>
-                <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors" data-more="Read more" data-less="Read less">Read more</button>
+                    </div>
+                    <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors">Read more</button>
 
-                <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
-                    <!-- 📷 FOTO: reemplaza este div por <img src="assets/alfredo-torres.jpg" alt="Alfredo Torres" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
-                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
-                        <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                            <i data-lucide="user" class="w-7 h-7 text-white/40"></i>
+                    <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+                        <!-- 📷 FOTO: reemplaza este div por <img src="assets/alfredo-torres.jpg" alt="Alfredo Torres" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
+                            <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center"><i data-lucide="user" class="w-7 h-7 text-white/40"></i></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Alfredo Torres</h4>
+                            <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi3_role">Partner | Torres &amp; Sánchez Law Firm · Client Since 2021</p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold">Alfredo Torres</h4>
-                        <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi3_role">Partner | Torres &amp; Sánchez Law Firm · Client Since 2021</p>
-                    </div>
-                </div>
-            </article>
- <!-- Testimonial 4: Mi Número Local (MNL) -->
-            <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
-                <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+                </article>
 
-                <div class="testi-text relative flex-1">
-                    <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi3_text">“Since partnering with Global Connections in 2020, their team has become an essential part of our customer service and sales operations.
+                <!-- 4: Mi Número Local (MNL) -->
+                <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
+                    <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+                    <div class="testi-text relative flex-1">
+                        <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi4_text">Since partnering with Global Connections in 2020, their team has become an essential part of our customer service and sales operations.
 
 Serving primarily the Cuban community, providing personalized, reliable, and professional service is extremely important to us. Global Connections has consistently demonstrated a strong commitment to our customers, helping us strengthen relationships, drive sales, and support our business growth.
 
-Their professionalism, dedication, and reliability make them a trusted partner. We truly value our partnership and look forward to many more years of success together.”
-</p>
-                </div>
-                <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors" data-more="Read more" data-less="Read less">Read more</button>
+Their professionalism, dedication, and reliability make them a trusted partner. We truly value our partnership and look forward to many more years of success together.</p>
+                    </div>
+                    <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors">Read more</button>
 
-                <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
-                    <!-- 📷 FOTO: reemplaza este div por <img src="assets/alfredo-torres.jpg" alt="Alfredo Torres" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
-                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
-                        <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                            <i data-lucide="user" class="w-7 h-7 text-white/40"></i>
+                    <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+                        <!-- 📷 FOTO: reemplaza este div por <img src="assets/mnl-contacto.jpg" alt="Mi Número Local (MNL)" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
+                            <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center"><i data-lucide="user" class="w-7 h-7 text-white/40"></i></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mi Número Local (MNL)</h4>
+                            <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi4_role">Mi Número Local (MNL) | Client Since 2020</p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold">Mi Número Local (MNL)</h4>
-                        <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi3_role">Mi Número Local (MNL) Client Since 2020</p>
-                    </div>
-                </div>
-            </article>
-             <!-- Testimonial 5: Lily Maldonado -->
-            <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
-                <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+                </article>
 
-                <div class="testi-text relative flex-1">
-                    <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi3_text">“Since partnering with Global Connections in 2024, their team has been a wonderful addition to our business.
+                <!-- 5: Lily Maldonado -->
+                <article class="group flex flex-col p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all transform hover:-translate-y-2">
+                    <i data-lucide="quote" class="text-[#FF6B2B] opacity-40 w-10 h-10 mb-4"></i>
+                    <div class="testi-text relative flex-1">
+                        <p class="testi-body text-slate-300 text-sm leading-relaxed whitespace-pre-line line-clamp-[10]" data-i18n="testi5_text">Since partnering with Global Connections in 2024, their team has been a wonderful addition to our business.
 
 In immigration services, every client deserves to feel heard, respected, and supported throughout their journey. Global Connections understands the importance of that responsibility and consistently provides professional, compassionate, and reliable customer service.
 
 Their dedication has helped us strengthen our client relationships and maintain the high standards of care we strive to provide.
 
-We truly appreciate their commitment and are grateful to have them as a trusted partner.”
-</p>
-                </div>
-                <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors" data-more="Read more" data-less="Read less">Read more</button>
+We truly appreciate their commitment and are grateful to have them as a trusted partner.</p>
+                    </div>
+                    <button type="button" class="testi-toggle self-start mt-3 text-sm font-semibold text-[#FF6B2B] hover:text-orange-400 transition-colors">Read more</button>
 
-                <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
-                    <!-- 📷 FOTO: reemplaza este div por <img src="assets/alfredo-torres.jpg" alt="Alfredo Torres" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
-                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
-                        <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                            <i data-lucide="user" class="w-7 h-7 text-white/40"></i>
+                    <div class="flex items-center gap-4 mt-8 pt-6 border-t border-white/10">
+                        <!-- 📷 FOTO: reemplaza este div por <img src="assets/lily-maldonado.jpg" alt="Lily Maldonado" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#FF6B2B]/60 flex-shrink-0"> -->
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#003366] to-[#FF6B2B] p-0.5 flex-shrink-0">
+                            <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center"><i data-lucide="user" class="w-7 h-7 text-white/40"></i></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Lily Maldonado</h4>
+                            <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi5_role">Lily Maldonado Immigration Services | Partner Since 2024</p>
                         </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold">Lily Maldonado</h4>
-                        <p class="text-xs text-[#FF6B2B] font-semibold uppercase tracking-wider" data-i18n="testi3_role">Lily Maldonado Immigration Services | Partner Since 2026</p>
-                    </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script>
-    // "Read more / Read less" para los testimonios
-    document.querySelectorAll('.testi-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const body = btn.parentElement.querySelector('.testi-body');
-            const expanded = body.classList.toggle('line-clamp-[10]') === false;
-            btn.textContent = expanded ? btn.dataset.less : btn.dataset.more;
-        });
-    });
-</script>
     <section id="ceo" class="py-24 bg-slate-50 border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12 bg-white p-12 rounded-[3rem] shadow-xl border border-slate-100">
@@ -452,11 +408,8 @@ We truly appreciate their commitment and are grateful to have them as a trusted 
                 <div class="md:w-2/3">
                     <i data-lucide="quote" class="text-[#FF6B2B] opacity-20 w-16 h-16 mb-6"></i>
                     <h2 class="text-3xl font-bold text-[#003366] mb-2">Lidia Chavarría</h2>
-                    <p class="text-[#FF6B2B] font-semibold mb-6" data-i18n="ceo_role">Founder & CEO</p>
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed italic" data-i18n="ceo_bio">
-Lidia Chavarría is the Founder and CEO of the company, with over 12 years of experience in the call center industry. She leads a high-performing operation specializing in debt collections, sales, customer service, and technical support, delivering scalable communication solutions for businesses across multiple industries.
-
-Under her leadership, the company has successfully operated for more than a decade in Honduras, partnering with businesses and law firms serving the Hispanic community, particularly in immigration services. With a strong focus on performance, cultural understanding, and operational excellence, she has positioned the company as a trusted outsourcing partner offering a diverse range of call center services.                    </p>
+                    <p class="text-[#FF6B2B] font-semibold mb-6" data-i18n="ceo_role">Founder &amp; CEO</p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed italic" data-i18n="ceo_bio">Lidia Chavarría is the Founder and CEO of the company, with over 12 years of experience in the call center industry. She leads a high-performing operation specializing in debt collections, sales, customer service, and technical support, delivering scalable communication solutions for businesses across multiple industries.<br><br>Under her leadership, the company has successfully operated for more than a decade in Honduras, partnering with businesses and law firms serving the Hispanic community, particularly in immigration services. With a strong focus on performance, cultural understanding, and operational excellence, she has positioned the company as a trusted outsourcing partner offering a diverse range of call center services.</p>
                     <div class="flex items-center gap-4">
                         <div class="h-1 w-12 bg-[#FF6B2B]"></div>
                         <span class="text-sm font-bold text-slate-400 uppercase tracking-widest" data-i18n="ceo_vision">Leadership Vision</span>
@@ -485,30 +438,24 @@ Under her leadership, the company has successfully operated for more than a deca
                 <div>
                     <h2 class="text-4xl font-bold text-[#003366] mb-6" data-i18n="contact_title">Get in Touch</h2>
                     <p class="text-slate-600 mb-10" data-i18n="contact_desc">Experience the power of nearshoring. Send us a message and our consultants will reach out with a tailored strategy.</p>
-                    
+
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#FF6B2B]">
-                                <i data-lucide="mail"></i>
-                            </div>
+                            <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#FF6B2B]"><i data-lucide="mail"></i></div>
                             <div>
                                 <p class="text-xs text-slate-400 uppercase font-bold tracking-widest" data-i18n="contact_email_label">Email Us</p>
                                 <p class="text-[#003366] font-medium">info@globalconnectionshn.com</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#FF6B2B]">
-                                <i data-lucide="phone"></i>
-                            </div>
+                            <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#FF6B2B]"><i data-lucide="phone"></i></div>
                             <div>
                                 <p class="text-xs text-slate-400 uppercase font-bold tracking-widest" data-i18n="contact_phone_label">Call Us</p>
                                 <p class="text-[#003366] font-medium">+1 8647457160</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#FF6B2B]">
-                                <i data-lucide="map-pin"></i>
-                            </div>
+                            <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#FF6B2B]"><i data-lucide="map-pin"></i></div>
                             <div>
                                 <p class="text-xs text-slate-400 uppercase font-bold tracking-widest" data-i18n="contact_map_label">Headquarters</p>
                                 <p class="text-[#003366] font-medium" data-i18n="contact_map_val">Choluteca, Honduras</p>
@@ -516,26 +463,26 @@ Under her leadership, the company has successfully operated for more than a deca
                         </div>
                     </div>
                 </div>
-                
+
                 <form class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 shadow-sm" onsubmit="return false">
                     <div class="space-y-4">
                         <div>
                             <label class="block text-sm font-semibold text-slate-700 mb-1" data-i18n="form_name">Full Name</label>
-                            <input type="text" placeholder="John Doe" class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white">
+                            <input type="text" placeholder="John Doe" data-i18n-placeholder="ph_name" class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white">
                         </div>
                         <div class="grid grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-sm font-semibold text-slate-700 mb-1" data-i18n="form_email">Business Email</label>
-                                <input type="email" placeholder="john@company.com" class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white">
+                                <input type="email" placeholder="john@company.com" data-i18n-placeholder="ph_email" class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-700 mb-1" data-i18n="form_company">Company</label>
-                                <input type="text" placeholder="Acme Inc." class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white">
+                                <input type="text" placeholder="Acme Inc." data-i18n-placeholder="ph_company" class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white">
                             </div>
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-slate-700 mb-1" data-i18n="form_message">Message</label>
-                            <textarea rows="4" placeholder="How can we help your business?" class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white"></textarea>
+                            <textarea rows="4" placeholder="How can we help your business?" data-i18n-placeholder="ph_message" class="w-full px-5 py-3 rounded-xl border-none ring-1 ring-slate-200 focus:ring-2 focus:ring-[#FF6B2B] transition-all bg-white"></textarea>
                         </div>
                         <button class="w-full py-4 bg-[#003366] text-white rounded-xl font-bold hover:bg-slate-800 transition-all shadow-lg" data-i18n="form_btn">Send Inquiry</button>
                     </div>
@@ -552,23 +499,22 @@ Under her leadership, the company has successfully operated for more than a deca
                         <div class="w-8 h-8 bg-gradient-to-br from-[#003366] to-[#FF6B2B] rounded-lg flex items-center justify-center text-white font-bold">G</div>
                         <span class="text-xl font-bold tracking-tight">Global Connections <span class="text-[#FF6B2B]">HN</span></span>
                     </div>
-                    <p class="text-slate-400 max-w-sm mb-8 leading-relaxed" data-i18n="footer_desc">
-                        Transforming the BPO landscape in Southern Honduras since 2014. Excellence in nearshore solutions.
-                    </p>
+                    <p class="text-slate-400 max-w-sm mb-8 leading-relaxed" data-i18n="footer_desc">Transforming the BPO landscape in Southern Honduras since 2014. Excellence in nearshore solutions.</p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="Twitter" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#FF6B2B] transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
                     </div>
                 </div>
                 <div>
                     <h4 class="font-bold mb-6" data-i18n="footer_links_title">Quick Links</h4>
                     <ul class="space-y-4 text-slate-400">
-                        <li><a href="#about" class="hover:text-white transition-colors" data-i18n="nav_about">About Us</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors" data-i18n="nav_services">Services</a></li>
-                        <li><a href="#why-us" class="hover:text-white transition-colors" data-i18n="nav_why_hn">Why Honduras</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-colors" data-i18n="nav_contact">Contact</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors" data-i18n="footer_about">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors" data-i18n="footer_services">Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors" data-i18n="footer_why">Why Honduras</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors" data-i18n="footer_testimonials">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors" data-i18n="footer_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -588,18 +534,18 @@ Under her leadership, the company has successfully operated for more than a deca
     </footer>
 
     <script src="main.js"></script>
-    
-<!-- Floating WhatsApp Button -->
-<a
-    href="https://wa.me/18647457160?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services."
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat with us on WhatsApp"
-    title="Chat with us on WhatsApp"
->
-    <i data-lucide="message-circle"></i>
-</a>
+
+    <!-- Floating WhatsApp Button -->
+    <a id="wa-float"
+       href="https://wa.me/18647457160?text=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20services."
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with us on WhatsApp"
+       title="Chat with us on WhatsApp"
+       data-i18n-aria="wa_label">
+        <i data-lucide="message-circle"></i>
+    </a>
 
 </body>
 </html>
